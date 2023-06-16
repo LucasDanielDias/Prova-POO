@@ -13,11 +13,19 @@ public class Update {
         EntityManager em = factory.createEntityManager();
 
         Categoria cat = em.find(Categoria.class, 1);
-        cat.setNome("Livros");
 
         em.getTransaction().begin();
-        em.merge(cat);
+        cat.setNome("Livros");
         em.getTransaction().commit();
+
+//        Categoria cat = new Categoria();
+//        cat.setId(1);
+//        cat.setNome("Livros");
+//
+//        em.getTransaction().begin();
+//        em.merge(cat);
+//        em.getTransaction().commit();
+
 
 
 
