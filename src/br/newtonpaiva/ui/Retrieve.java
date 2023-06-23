@@ -8,6 +8,7 @@ import javax.persistence.Persistence;
 
 public class Retrieve {
     public static void main(String[] args) {
+        //O codigo inteiro é padrão e serve para retornar uma categoria
         EntityManagerFactory factory =
                 Persistence.createEntityManagerFactory("EC-PU");
         EntityManager em = factory.createEntityManager();
